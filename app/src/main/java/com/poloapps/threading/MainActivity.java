@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             for (int i = 0; i < seconds; i++){
                 if (stopThread) return;
                 if(i == 5){
-                     Handler threadHandler = new Handler(Looper.getMainLooper());
+                  /*  Handler threadHandler = new Handler(Looper.getMainLooper());
                     threadHandler.post(new Runnable() {
                         @Override
                         public void run() {
@@ -96,8 +96,8 @@ public class MainActivity extends AppCompatActivity {
                         public void run() {
                             buttonStartThread.setText("56");
                         }
-                    });
-                    
+                    }); */
+
                      runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
